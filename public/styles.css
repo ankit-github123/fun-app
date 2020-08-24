@@ -1,0 +1,233 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: #ccc;
+}
+
+.carousel-items {
+  position: relative;
+  width: 100%;
+
+  margin: 0 auto 40px auto;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+
+
+}
+
+.carousel-item:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-item.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 600ms;
+}
+.carousel {
+  margin-top: 10%;
+}
+.quotes-class-main {
+  /* background-image: linear-gradient(to right bottom, #7ed56fad,#28b485d8),url(C:\xampp\htdocs\React\keeper-app-part-1-starting\src\writer.png); */
+ 
+  height: 85vh;
+  background-size: cover;
+  clip-path: polygon(0 0,100% 0,100% 78% , 0 100%); 
+
+}
+
+.quote-heading {
+  display: block;
+  position: absolute;
+  top: 130%;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.quote-button {
+  position: absolute;
+  height: 39%;
+  width: 5%;
+  top: 15rem;
+  opacity: 0.5;
+}
+.quote-paragraph {
+  position: absolute;
+    display: block;
+    top: 14rem;
+    font-size: 163%;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif;
+}
+.quote-img-left {
+  position: absolute;
+
+  top: 11rem;
+  left: 8rem;
+}
+.quote-img-right {
+  position: absolute;
+    right: 7rem;
+    top: 13rem;
+}
+
+
+
+/*Jokes Api Section*/
+
+.jokes-main {
+  height: 95vh;
+  clip-path: polygon(0% 19%,100% 0%,100% 90% , 0 100%);
+  margin-top: 0rem;
+
+}
+.laugh-button {
+  position: absolute;
+  height: 39%;
+  width: 5%;
+  top: 40rem;
+  opacity: 0.5;
+}
+
+.trivia-main {
+  height: 95vh;
+  clip-path: polygon(0% 19%,100% 0%,100% 90% , 0 100%);
+  margin-top: 0rem;
+  position: relative;
+}
+.laugh-button {
+  position: absolute;
+  height: 39%;
+  width: 5%;
+  top: 40rem;
+  opacity: 0.5;
+}
+.trival-heading {
+  z-index: 1;
+  position: absolute;
+  top: 105px;
+  /* margin-left: auto; */
+  display: flex;
+  justify-content: center;
+  /* margin-right: auto; */
+  width: 100%;
+  color: whitesmoke;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.ank {
+  position: absolute;
+  top: 221px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button-false {
+right: 40%;
+}
+.trivia-carosal-heading{
+  display: flex;
+  position: absolute;
+  top: 185%;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  width: 100%;
+}
+.check-answer-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* bottom: -106px; */
+  top: 25rem;
+} 
+.trivia-paragraph {
+
+    position: absolute;
+    display: block;
+    top: 17rem;
+    font-size: 163%;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif;
+}
+.option-ques {
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 15rem;
+  margin-left: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quiz-button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.quiz-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.quiz-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.quiz-button:hover span {
+  padding-right: 25px;
+}
+
+.quiz-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
